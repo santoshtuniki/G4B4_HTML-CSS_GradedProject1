@@ -82,7 +82,7 @@ header h1 {
 }
 
 .slide2 {
-	animation: photo3 20s linear 1s infinite;
+	animation: photo2 20s linear 1s infinite;
 }
 
 .slide3 {
@@ -114,7 +114,7 @@ header h1 {
 		visibility: hidden;
 	}
 	100%{
-		visibility: visible;
+		visibility: hidden;
 	}
 }
 
