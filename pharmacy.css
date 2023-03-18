@@ -202,6 +202,71 @@ header h1 {
 	}
 }
 
+.container {
+	margin: 10px 5px;
+	padding: 10px;
+	border: 1px solid rgb(137, 137, 137);
+}
+
+.container h2 {
+	margin: 0;
+}
+
+.box {
+	margin: 5px 0;
+	padding: 5px 10px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.tile {
+	height: 250px;
+	width: 21%;
+	min-width: 180px;
+	padding: 10px;
+	margin: 5px 10px;
+	border-radius: 5px;
+	background-color: #f3f3fd;
+	box-shadow: 8px 8px 16px #80808061;
+}
+
+.tile h3 {
+	margin: 0;
+	margin-bottom: 5px;
+}
+
+.tile-1 {
+	height: 140px;
+}
+
+.tile-1 img {
+	height: 100%;
+	width: 100%;
+}
+
+.tile-2 {
+	height: 80px;
+	margin-top: 8px;
+}
+
+.tile-2 p {
+	margin: 0;
+	margin-bottom: 5px;
+	color: #6396e9;
+}
+
+.tile-2 button {
+	width: 100%;
+	padding: 4px;
+	font-weight: 600;
+	border-radius: 5px;
+	font-size: 16px;
+	color: orange;
+	background-color: #e6e6fa;
+	border: 2px solid rgb(117, 117, 248);
+}
+
 footer p {
 	margin: 0%;
 	padding: 15px;
