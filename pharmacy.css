@@ -205,7 +205,7 @@ header h1 {
 .container {
 	margin: 10px 5px;
 	padding: 10px;
-	border: 1px solid rgb(137, 137, 137);
+	border: 2px solid rgba(137, 137, 137, 0.2);
 }
 
 .container h2 {
@@ -234,6 +234,10 @@ header h1 {
 .tile h3 {
 	margin: 0;
 	margin-bottom: 5px;
+}
+
+.tile:hover {
+	transform: scale(1.1);
 }
 
 .tile-1 {
@@ -267,6 +271,11 @@ header h1 {
 	border: 2px solid rgb(117, 117, 248);
 }
 
+.tile-2 button:focus{
+	background-color: rgb(250, 234, 230);
+	border-color: rgb(0, 255, 76);
+}
+
 footer p {
 	margin: 0%;
 	padding: 15px;
@@ -274,3 +283,8 @@ footer p {
 	color: white;
 	background-color: #000000;
 }
+
+/* 
+	background-color: rgb(250, 234, 230)
+	border-color: rgb(0, 255, 76)
+*/
