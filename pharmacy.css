@@ -223,7 +223,6 @@ header h1 {
 .tile {
 	height: 250px;
 	width: 21%;
-	min-width: 180px;
 	padding: 10px;
 	margin: 5px 10px;
 	border-radius: 5px;
@@ -288,9 +287,6 @@ footer p {
 @media screen and (max-width: 732px){
 	.tile {
 		width: 40%;
-	}
-	#slide-show {
-		height: 300px;
 	}
 }
 
