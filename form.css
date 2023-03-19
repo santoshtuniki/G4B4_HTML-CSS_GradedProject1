@@ -14,6 +14,8 @@ body {
 
 #pharma-pic {
 	width: 48%;
+	min-width: 250px;
+	max-height: 100vh;
 	position: sticky;
 	top: 0;
 }
@@ -21,6 +23,10 @@ body {
 #pharma-pic img {
 	width: 100%;
 	height: 100%;
+}
+
+#pform {
+	padding: 5px;
 }
 
 #pform > div {
@@ -37,6 +43,19 @@ body {
 	width: 40%;
 	margin: 0 5px 10px;
 	border-bottom: 1px solid black;
+}
+
+#contact input:focus, #address input:focus {
+	border: none;
+}
+
+#address h4 {
+	margin: 10px 0;
+}
+
+#address select {
+	padding: 8px;
+	font-size: 14px;
 }
 
 #test div {
@@ -60,6 +79,18 @@ body {
 	width: 30%;
 }
 
-div button {
-	margin: 5px 10px;
+#buttons {
+	margin: 10px;
+	margin-left: 45%;
+}
+
+button {
+	margin: 10px 20px;
+	width: 80px;
+	border-radius: 4px;
+	height: 30px;
+	color: white;
+	font-size: 18px;
+	border: none;
+	background-color: rgb(175, 102, 243);
 }

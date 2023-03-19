@@ -23,6 +23,18 @@
 						<input type="text" placeholder="H-No" name="houseNumber" required>
 						<input type="text" placeholder="Street" name="street" required>
 						<input type="text" placeholder="Area" name="area" required>
+						<div>
+							<label for="district"><h4>District</h4></label>
+							<select name="district" id="district" form="pform">
+								<option value="Adilabad">Adilabad</option>
+								<option value="Hyderabad">Hyderabad</option>
+								<option value="Karimnagar">Karimnagar</option>
+								<option value="Khammam">Khammam</option>
+								<option value="Mahabubnagar">Mahabubnagar</option>
+								<option value="Medak">Medak</option>
+								<option value="Nalgonda">Nalgonda</option>
+							</select>
+						</div>
 					</div>
 					<div id="test">
 						<h3>3. Test Type</h3>
@@ -70,9 +82,9 @@
 							<small>Office hours are 9am to 6pm</small>
 						</div>
 					</div>
-					<div>
+					<div id="buttons">
 						<button type="reset">Reset</button>
-						<button type="submit">Submit</button>
+						<button type="submit" onclick="ischecked()">Submit</button>
 					</div>
 				</form>
 			</div>
@@ -81,5 +93,19 @@
 				<img src="Images/Lab-Test/lab-test.jpg" alt="lab-test.jpg">
 			</div>
 		</div>
+
+		<script>
+			function ischecked() {
+				const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+				const arrayOfCheckboxes = Array.from(checkboxes);
+				var checkedOne =  arrayOfCheckboxes.some(box => box.checked);
+				if(!checkedOne){
+					alert("Please check a checkbox");
+					event.preventDefault();
+				} else {
+					return checkedOne;
+				}
+			}
+		</script>
 	</body>
 </html>
