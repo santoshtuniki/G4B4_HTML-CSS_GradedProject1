@@ -46,13 +46,9 @@ body {
 #contact input, #address input {
 	border: none;
 	padding: 10px;
-	width: 40%;
+	width: 42%;
 	margin: 0 5px 10px;
 	border-bottom: 1px solid black;
-}
-
-#contact input:focus, #address input:focus {
-	border: none;
 }
 
 #address h4 {
@@ -78,21 +74,21 @@ body {
 }
 
 #appointment h3 ~ div {
-	width: 55%;
+	width: 95%;
 }
 
-#appointment h3 + div {
-	width: 30%;
+#appointment label {
+	margin-right: 10px;
 }
 
 #buttons {
 	position: absolute;
-	bottom: 20px;
-	right: 48%;
+	bottom: 30px;
+	left: 34%;
 }
 
 button {
-	margin: 10px 20px;
+	margin: 5px;
 	width: 80px;
 	border-radius: 4px;
 	height: 30px;
@@ -100,4 +96,76 @@ button {
 	font-size: 18px;
 	border: none;
 	background-color: rgb(175, 102, 243);
+}
+
+@media screen and (max-width: 965px) {
+	#contact input, #address input {
+		width: 85%;
+	}
+
+	#pharma-form {
+		width: 48%;
+	}
+	
+	#pharma-pic {
+		width: 52%;
+	}
+
+	#buttons {
+		left: 27%;
+	}
+}
+
+@media screen and (max-width: 750px) {
+	#pharma {
+		margin: 40px 8%;
+		display: flex;
+		flex-direction: column-reverse;
+		position: fixed;
+		max-height: 80vh;
+		overflow: auto;
+	}
+
+	#pharma-form {
+		width: 95%;
+		padding: 10px;
+	}
+
+	#pharma-pic {
+		width: 100%;
+		height: 235px;
+		position: relative;
+	}
+
+	#pform {
+		padding: 8px 15px;
+	}
+
+	#pform h3 {
+		margin: 10px 0;
+	}
+
+	#contact input, #address input {
+		width: 42%;
+	}
+
+	#buttons {
+		left: 56%;
+	}
+}
+
+@media screen and (max-width: 565px) {
+	#contact input, #address input {
+		width: 85%;
+	}
+
+	#buttons {
+		left: 48%;
+	}
+}
+
+@media screen and (max-width: 420px) {
+	#buttons {
+		left: 30%;
+	}
 }
