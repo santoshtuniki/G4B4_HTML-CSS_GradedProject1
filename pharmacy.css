@@ -284,7 +284,19 @@ footer p {
 	background-color: #000000;
 }
 
-/* 
-	background-color: rgb(250, 234, 230)
-	border-color: rgb(0, 255, 76)
-*/
+
+@media screen and (max-width: 732px){
+	.tile {
+		width: 40%;
+	}
+	#slide-show {
+		height: 300px;
+	}
+}
+
+@media screen and (max-width: 512px){
+	.tile {
+		width: 70%;
+		margin-left: 15%;
+	}
+}
